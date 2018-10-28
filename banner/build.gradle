@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+version = "1.4.10"
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 25
+
+    }
+        buildTypes {
+            debug {
+            }
+            release {
+            }
+            foss {
+            }
+        }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    provided 'com.android.support:support-v4:+'
+}

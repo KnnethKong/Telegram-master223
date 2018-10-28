@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="@color/wallet_holo_blue_light"
+                >
+                <gradient
+                    android:endColor="#2593db"
+                    android:startColor="#51e5d2" />
+            </stroke>
+            <corners android:radius="60dp" />
+            <solid android:color="@color/hockeyapp_background_white" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="@color/hockeyapp_background_light"
+                >
+                <gradient
+                    android:endColor="@color/hockeyapp_background_light"
+                    android:startColor="@color/hockeyapp_background_light" />
+            </stroke>
+            <corners android:radius="60dp" />
+            <solid android:color="@color/hockeyapp_background_white" />
+        </shape>
+    </item>
+</selector>
